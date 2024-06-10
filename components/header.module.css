@@ -1,0 +1,104 @@
+.logo {
+  margin-right: 750px;  
+  height: 40px;
+  width: 190px; 
+  margin-left: 56px;
+}
+
+.me-auto {
+  margin-left: 190px;
+}
+
+.contact_us {
+  background: #00008B;
+  border-color: #00008B;
+  padding: 15px 38px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-family: Raleway, sans-serif;
+  vertical-align: middle;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50px;
+  font-family: 'Roboto', sans-serif;
+  top: 300px;
+  left: 30%;
+  width: 165px;
+  height: 40px;
+  border: 2px solid #14279b;
+  text-align: left;
+  
+}
+
+.contact_us:focus {
+  background: transparent;
+}
+
+.contact_us:hover {
+  border-color: #3131e8;
+  background: #3131e8;
+  color: #FFFFFF;
+}
+
+.contact_us:active {
+  color: white;
+}
+ 
+/* Media Queries */
+@media (max-width: 1200px) {
+  .me-auto {
+    margin-left: 100px;
+  }
+
+  .contact_us {
+    padding: 12px 30px;
+    font-size: 14px;
+    width: 150px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    height: 35px;
+    width: 170px;
+  }
+
+  .me-auto {
+    margin-left: 0;
+  }
+
+  .contact_us {
+    width: 140px;
+    height: 35px;
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 30px;
+    width: 150px;
+  }
+
+  .contact_us {
+    width: 130px;
+    height: 30px;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    height: 25px;
+    width: 130px;
+  }
+
+  .contact_us {
+    width: 120px;
+    height: 25px;
+    padding: 6px 15px;
+  }
+}

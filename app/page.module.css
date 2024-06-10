@@ -1,0 +1,187 @@
+
+.picture {
+  animation: moveUpDown 2s infinite;
+}
+@keyframes moveUpDown {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-30px);
+  }
+}
+
+.picture{
+  position: relative;
+  margin-left: 540px;
+  height: 90%;
+  }
+  
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    padding-bottom: 50px;  
+    position: absolute;
+    top: 190px;  
+    left: 25%;
+    transform: translateX(-50%);
+    z-index: 1000;  
+}
+.box2{
+  color: lightblack;
+  font-size: 20px;
+}
+ 
+.book_now{
+  background: white;
+  border-color:  #00008B; 
+  padding:15px 38px;
+  font-size:16px;
+  letter-spacing: 0.5px;
+  font-family: Raleway, sans-serif;
+  vertical-align: middle;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50px;
+  font-family: 'Roboto', sans-serif;
+  top: 190px;  
+  left: 25%;
+  width: 170px;
+  height: 50px;
+  border: 2px solid #14279b;
+}
+ 
+.book_now:focus {
+  background: transparent; ;
+}
+
+.book_now:hover {
+  border-color:  #00008B; 
+  background:  #00008B;  
+  color:  #FFFFFF; 
+}
+ 
+.book_now:active {
+  color: white; 
+}
+ 
+
+.custom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:  #f8f9fa;
+  height: 180px;
+}
+
+.client_img {
+  width: 50%
+}
+
+.brand_img1 {
+  width: 30%;
+  height: 20%;
+}
+
+.brand_img1:focus {
+  background: transparent; ;
+}
+
+.brand_img1:hover {
+  border-color:  #535356; 
+  background:  #bababc;  
+  color:  #FFFFFF; 
+}
+ 
+.brand_img2 {
+  width: 100%;
+  height: 75%;
+  margin-top: 20%;
+  margin-left: -30%;
+}
+.brand_img3 {
+  width: 38%;
+  height: 20%;
+}
+.brand_img4 {
+  width: 280%;
+  height: 100%;
+}
+.brand_img5 {
+  width: 48%;
+  height: 30%;
+}
+.brand_img6 {
+  width: 40%;
+  height: 20%;
+}
+
+ 
+/* Media Queries */
+@media (max-width: 1200px) {
+  .picture {
+    margin-left: 400px;
+  }
+  .box {
+    top: 170px;
+    left: 20%;
+  }
+}
+
+@media (max-width: 992px) {
+  .picture {
+    margin-left: 300px;
+  }
+  .box {
+    top: 150px;
+    left: 15%;
+  }
+  .book_now {
+    width: 150px;
+    height: 45px;
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .picture {
+    margin-left: 200px;
+  }
+  .box {
+    top: 130px;
+    left: 10%;
+  }
+  .book_now {
+    width: 140px;
+    height: 40px;
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .picture {
+    margin-left: 100px;
+  }
+  .box {
+    top: 110px;
+    left: 5%;
+  }
+  .book_now {
+    width: 130px;
+    height: 35px;
+    padding: 8px 20px;
+  }
+  .custom {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+  .brand_img1, .brand_img2, .brand_img3, .brand_img4, .brand_img5, .brand_img6 {
+    width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+ 
+ 
